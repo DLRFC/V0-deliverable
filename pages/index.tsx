@@ -45,7 +45,7 @@ const Home: NextPage = () => {
           </Link>
         </div>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
+        <div className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600">
           <Carousel />
         </div>
       </main>
