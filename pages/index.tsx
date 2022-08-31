@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import Carousel from '../components/layout/Carousel'
 
 const Home: NextPage = () => {
   return (
@@ -12,16 +13,11 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Deliverable
-        </h1>
-
+        <h1 className="text-6xl font-bold">Deliverable</h1>
         <p className="mt-3 text-2xl">Roadmap-based accountability for StartUps and Investors</p>
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <Link
-            href="/builders"
-          >
+          <Link href="/builders">
             <div className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600">
               <h3 className="text-2xl font-bold">for Builders &rarr;</h3>
               <p className="mt-4 text-xl">
@@ -30,9 +26,7 @@ const Home: NextPage = () => {
             </div>
           </Link>
 
-          <Link
-            href="investors"
-          >
+          <Link href="investors">
             <div className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600">
               <h3 className="text-2xl font-bold">for Investors &rarr;</h3>
               <p className="mt-4 text-xl">
@@ -41,9 +35,7 @@ const Home: NextPage = () => {
             </div>
           </Link>
 
-          <Link
-            href="/projects"
-          >
+          <Link href="/projects">
             <div className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600">
               <h3 className="text-2xl font-bold">browse Projects &rarr;</h3>
               <p className="mt-4 text-xl">
@@ -51,6 +43,10 @@ const Home: NextPage = () => {
               </p>
             </div>
           </Link>
+        </div>
+
+        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
+          <Carousel />
         </div>
       </main>
 
