@@ -1,13 +1,34 @@
+import Link from "next/link";
+
 function NavBar() {
   return (
-    <div className="pt-[50px] pb-[25px] mb-[70px] flex items-end justify-between bg-brand-teal text-brand-green">
-      <h1 className="text-3xl text-brand-orange pl-[30px]">
-        <span className=" text-4xl text-brand-green">&rarr;</span> Deliverable
-      </h1>
-      <div className="flex items-end justify-between px-6">
-        <h2 className="mr-[30px] hover:text-brand-gray">Active Projects</h2>
-        <h2 className="mr-[30px] ml-[30px] hover:text-brand-gray">Builders</h2>
-        <h2 className="mr-[30px] ml-[30px] hover:text-brand-gray">Investors</h2>
+    <div className="pt-[70px] pb-[40px] mb-[70px] flex items-end justify-between bg-brand-teal">
+      <div>
+        <Link href="/">
+          <h1 className="text-5xl text-brand-orange pl-[100px] cursor-pointer">
+            Deliverable
+          </h1>
+        </Link>
+        <hr className="border-3 border-brand-green mb-[5px]"></hr>
+        <hr className="border-3 border-brand-green"></hr>
+      </div>
+
+      <div className="flex items-end justify-between text-brand-green">
+        <Link href="/projects">
+          <h2 className="mr-[20px] hover:text-brand-gray cursor-pointer">
+            Active Projects
+          </h2>
+        </Link>
+        <Link href="/builders">
+          <h2 className="mr-[20px] ml-[20px] hover:text-brand-gray cursor-pointer">
+            Builders
+          </h2>
+        </Link>
+        <Link href="investors">
+          <h2 className="mr-[40px] ml-[20px] hover:text-brand-gray cursor-pointer">
+            Investors
+          </h2>
+        </Link>
       </div>
     </div>
   );

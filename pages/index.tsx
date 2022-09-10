@@ -16,13 +16,13 @@ const Home: NextPage = () => {
         </Head>
 
         <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center bg-brand-gray">
-          <h1 className="text-6xl font-bold text-brand-teal">Deliverable</h1>
-          <p className="mt-3 text-2xl text-brand-dark">Roadmap-based accountability for StartUps and Investors</p>
+          <h1 className="text-4xl px-[50px] font-bold text-brand-dark">Roadmap-based accountability</h1>
+          <h1 className="text-4xl px-[50px] font-bold text-brand-dark">for StartUps and Investors</h1>
 
           <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
             <Link href="/builders">
-              <div className="mt-6 w-96 rounded-xl border border-brand-green p-6 text-left hover:text-blue-600 focus:text-blue-600">
-                <h3 className="text-2xl font-bold text-brand-teal">for Builders<span className="text-brand-orange"> &rarr;</span></h3>
+              <div className="mt-6 w-96 rounded-xl border border-brand-green p-6 text-left cursor-pointer">
+                <h3 className="text-2xl font-bold text-brand-teal hover:text-brand-orange">for Builders<span className="text-4xl text-brand-orange"> &rarr;</span></h3>
                 <p className="mt-4 text-xl text-brand-dark">
                   Create a profile and roadmap for your project and get connected to investors.
                 </p>
@@ -30,8 +30,8 @@ const Home: NextPage = () => {
             </Link>
 
             <Link href="investors">
-              <div className="mt-6 w-96 rounded-xl border border-brand-green p-6 text-left hover:text-blue-600 focus:text-blue-600">
-                <h3 className="text-2xl font-bold text-brand-teal">for Investors<span className="text-brand-orange"> &rarr;</span></h3>
+              <div className="mt-6 w-96 rounded-xl border border-brand-green p-6 text-left cursor-pointer">
+                <h3 className="text-2xl font-bold text-brand-teal hover:text-brand-orange">for Investors<span className="text-4xl text-brand-orange"> &rarr;</span></h3>
                 <p className="mt-4 text-xl text-brand-dark">
                   Create your Investor's Dashboard and add exciting new projects to your portfolio.
                 </p>
@@ -39,8 +39,8 @@ const Home: NextPage = () => {
             </Link>
 
             <Link href="/projects">
-              <div className="mt-6 w-96 rounded-xl border border-brand-green p-6 text-left hover:text-blue-600 focus:text-blue-600">
-                <h3 className="text-2xl font-bold text-brand-teal">browse Projects<span className="text-brand-orange"> &rarr;</span></h3>
+              <div className="mt-6 w-96 rounded-xl border border-brand-green p-6 text-left cursor-pointer">
+                <h3 className="text-2xl font-bold text-brand-teal hover:text-brand-orange">browse Projects<span className="text-4xl text-brand-orange"> &rarr;</span></h3>
                 <p className="mt-4 text-xl text-brand-dark">
                   Explore the full collection of projects being powered by Deliverable.
                 </p>
